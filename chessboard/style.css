@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    border: 2px solid #333;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.1s ease;
+}
+
+.light {
+    background-color: #f0d9b5;
+}
+
+.dark {
+    background-color: #b58863;
+}
+
+.clicked {
+    background-color: #e74c3c;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#reset-button:hover {
+    background-color: #2980b9;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s ease-in-out;
+}
